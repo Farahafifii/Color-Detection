@@ -8,7 +8,8 @@ import keyboard
 img  =  cv2.imread("testpic.jpg") # sample image to read the colors from 
 click = False # boolean variable to check if the mouse is clicked
 
-index  = ["color","color_name","hex","r","g","b"] 
+index  = ["color","color_name","hex","r","g","b"]
+ 
 # using pandas to read the csv file
 csv = pd.read_csv("colors.csv", names = index, header = None)
 
@@ -36,11 +37,8 @@ def get_color_name(r,g,b):
             color_name = csv.loc[i,"color_name"]
     return color_name
 
-# create window to display the image and call the call back function when the mouse is clicked
-cv2.setMouseCallback("Color Detection", call_back_function)
+cv2.setMouseCallback("Color Detection", call_back_function) # set the call back function to be called when mouse is clicked 
 
-
-loop = 1 # loop variable to keep the program running
 while (1):
     cv2.imshow("Color Detection", img)
     cv2.waitKey(0) 
