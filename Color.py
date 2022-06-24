@@ -34,19 +34,18 @@ def get_color_name(r,g,b):
 cv2.namedWindow("Color Detection")
 cv2.setMouseCallback("Color Detection", call_back)
 
-cv2.destroyAllWindows()
+
 while (1):
-    
     cv2.imshow("Color Detection", img)
     if (click):
         cv2.rectangle(img,(20,20),(750,60),(b1,g1,r1),-1)
         text  = "Color: " + get_color_name(r1,g1,b1) + "RGB: " + str(r1) + "," + str(g1) + "," + str(b1)
-        cv2.putText(img,text,(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2)
+        cv2.putText(img,text,(50,50),2,0.8,(255,255,255),2,cv2.LINE_AA)
         if r1+b1+g1 >= 600:
-            cv2.putText(img,text,(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2,cv2.LINE_AA)
+            cv2.putText(img,text,(50,50),2,0.8,(0,0,0),2,cv2.LINE_AA)
         click = False
-        if cv2.waitKey(1) & 0xFF ==27:
+        if cv2.waitKey(20) & 0xFF ==27:
             break
-
+cv2.destroyAllWindows()
 
 print("hello world")
