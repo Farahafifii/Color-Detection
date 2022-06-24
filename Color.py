@@ -1,5 +1,3 @@
-from turtle import exitonclick
-from cv2 import CALIB_CB_MARKER
 import numpy as np
 import cv2
 import pandas as pd
@@ -9,7 +7,7 @@ img  =  cv2.imread("testpic.jpg") # sample image to read the colors from
 click = False # boolean variable to check if the mouse is clicked
 
 index  = ["color","color_name","hex","r","g","b"]
- 
+
 # using pandas to read the csv file
 csv = pd.read_csv("colors.csv", names = index, header = None)
 
@@ -52,5 +50,3 @@ while (1):
     if keyboard.is_pressed('Esc'):
         break
 cv2.destroyAllWindows()
-
-print("hello world")

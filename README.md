@@ -11,3 +11,6 @@ A color detection program using Computer Vision that detects the color of the pi
 
   * To test program: click anywhere on the pixel you want to get the color of on the window and then press `space` 
   * To Exit : press `esc` button
+
+### Sample Output 
+ ![This is an image](output.png)
