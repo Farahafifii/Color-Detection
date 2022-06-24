@@ -15,5 +15,5 @@ A color detection program using Computer Vision that detects the color of the pi
 ### Sample Output 
 <details>
            <summary>Output</summary>
-           <p>output.png</p>
+           <img src="img_girl.jpg" alt="Girl in a jacket">
 </details>
