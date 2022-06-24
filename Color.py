@@ -9,9 +9,10 @@ img  =  cv2.imread("testpic.jpg") # sample image to read the colors from
 click = False # boolean variable to check if the mouse is clicked
 
 index  = ["color","color_name","hex","r","g","b"] 
+# using pandas to read the csv file
 csv = pd.read_csv("colors.csv", names = index, header = None)
 
-cv2.namedWindow("Color Detection")
+cv2.namedWindow("Color Detection") #create a window
 
 def call_back_function (event ,x,y,flags,param):
    # call back function: when the mouse is clicked, the color of the pixel that the mouse clicked on is displayed
