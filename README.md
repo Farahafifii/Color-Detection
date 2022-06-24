@@ -13,4 +13,7 @@ A color detection program using Computer Vision that detects the color of the pi
   * To Exit : press `esc` button
 
 ### Sample Output 
- ![This is an image](output.png)
+<details>
+           <summary>Output</summary>
+           <p>![This is an image](output.png)</p>
+</details>
