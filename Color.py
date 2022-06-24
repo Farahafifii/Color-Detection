@@ -5,9 +5,9 @@ import cv2
 import pandas as pd
 import keyboard 
 
-img  =  cv2.imread("test2.jpg") # sample image to read the colors from 
+img  =  cv2.imread("testpic.jpg") # sample image to read the colors from 
 click = False # boolean variable to check if the mouse is clicked
-r,g,b = 0,100,100
+
 index  = ["color","color_name","hex","r","g","b"] 
 csv = pd.read_csv("colors.csv", names = index, header = None)
 
@@ -45,7 +45,7 @@ while (1):
     cv2.waitKey(0) 
     if click == True :
         cv2.rectangle(img,(20,20),(750,60),(b,g,r),-1)
-        text  = "Color " + get_color_name(r,g,b) + " RGB: " + str(r) + " ," + str(g) + " ," + str(b)
+        text  = "Color: " + get_color_name(r,g,b) + " RGB: " + str(r) + " ," + str(g) + " ," + str(b)
         cv2.putText(img,text,(50,50),2,0.8,(255,255,255),2,cv2.LINE_AA)
         if (r+b+g>= 600) :
             cv2.putText(img,text,(50,50),2,0.8,(0,0,0),2,cv2.LINE_AA)
