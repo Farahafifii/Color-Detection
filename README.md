@@ -1,6 +1,6 @@
 ### Description 
 A color detection program using Computer Vision that detects the color of the pixel the mouse has clicked from the image on and gets the color name and its RGB values from the csv file  `implemented in Python`
-### Libraries Used
+### ModulesUsed
   * OpenCV Library `pip install opencv-python`
   * Pandas Library `pip install pandas`
   * Numpy Libary   `pip install numpy`
@@ -15,4 +15,9 @@ A color detection program using Computer Vision that detects the color of the pi
 <details>
            <summary>Output</summary>
            <img src="output.png" alt="sample of output">
+</details>
+
+<details>
+           <summary>Contributer</summary>
+           <p> Farah Ahmed Afifi </P>
 </details>
